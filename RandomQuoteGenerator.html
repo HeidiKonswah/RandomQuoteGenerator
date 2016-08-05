@@ -1,0 +1,49 @@
+<html>
+<body>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <div class="header responsive col-sm-12">
+<h1 class="responsive">Random Quote Generator</h1>
+</div>
+
+<div class=" container col-sm-12">
+  
+  <blockquote class="responsive">
+    <p id="quoteText">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum, aspernatur quas earum aut tempora necessitatibus voluptatibus nam veritatis odit neque ut animi! Veniam nam pariatur unde dicta consectetur a quos, quae corporis dolorem, ratione ex aliquam, ipsa facilis nostrum.</p>
+    <cite>&mdash; <span id="quoteAuthor">Lorem impsum.</span>
+      </cite>
+  </blockquote>
+  <button class="btn responsive btn-quote "><b>Generate<br> New Quote</b></button>
+ <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet"
+  data-size="large">
+Tweet</a>
+</div>
+
+
+<script src="jquery-3.1.0.min.js"></script>
+<script src="javascript.js"></script>
+
+</body>
+</html>
